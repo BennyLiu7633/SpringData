@@ -87,8 +87,9 @@ public class HibernateTest {
             Transaction transaction = session.beginTransaction();
 
             //hibernate官網有 SELECT 可省略
-            String  hql ="FROM Customer";
-            List<Customer> resultList = session.createQuery(hql,Customer.class).getResultList();
+            String  hql ="FROM Customer WHERE custId =:id";
+            List<Customer> resultList = session.createQuery(hql,Customer.class)
+                    .setParameter("id",1l).getResultList();
             System.out.println(resultList);
 
             transaction.commit();
