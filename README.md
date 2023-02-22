@@ -1,0 +1,2 @@
+基於Hibernate實現數據庫ORM持久層操作
+包含Hibernate
