@@ -1,2 +1,2 @@
 基於Hibernate實現數據庫ORM持久層操作
-包含Hibernate
+包含使用HQL語法對資料庫進行操作
